@@ -1,0 +1,20 @@
+<h1>Your Voicemail</h1>
+
+<strong>You have <%= Dir["public/voicemail/*"].length %> messages</strong>
+<br /><br />
+<table>
+    <tr>
+        <th>From</th>
+        <th>Timestamp</th>
+        <th>Conversation UUID</th>
+        <th>Recording</th>
+    </tr>
+    <tr>
+        <% @recordings.each do |r| %>
+            <td><%= r.from %></td>
+            <td><%= r.created_at %></td>
+            <td><%= r.uuid %></td>
+            <td><a href="/public/voicemail/<%= r.recording_uuid %>.wav">Click here to listen</a></td>
+        <% end %>
+    </tr>
+</table>
