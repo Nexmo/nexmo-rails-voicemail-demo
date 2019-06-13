@@ -14,6 +14,8 @@ This is a voicemail demo app powered by Rails and the Nexmo Voice API. Users cal
 * Provision a Nexmo virtual number from the Nexmo dashboard
 * Create a Nexmo application from the Nexmo dashboard
 * Link your virtual number to your application in the Nexmo dashboard
+* Define your Nexmo credentials in the `/.env` file
+* Define the values for `NEXMO_NUMBER` and `EXTERNAL_URL` variables in the `voicemail_controller.rb` file
 * Start up the Rails server
 * Make your server externally accessible with ngrok
 
