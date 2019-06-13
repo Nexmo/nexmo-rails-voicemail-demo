@@ -5,7 +5,6 @@ class VoicemailController < ApplicationController
     EXTERNAL_URL = 'http://bengreenberg.ngrok.io'
     
     def index
-        byebug
         @recordings = Recording.all
     end
 
