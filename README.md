@@ -1,24 +1,27 @@
-# README
+# Rails Voicemail Demo with the Nexmo Voice API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a voicemail demo app powered by Rails and the Nexmo Voice API. Users call the Nexmo provisioned phone number and can leave a voicemail recording. All recordings are saved and can be viewed and listened to by visiting the website.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+* A [Nexmo account](https://dashboard.nexmo.com/sign-up)
+* Ruby on Rails
+* [ngrok](https://ngrok.io)
 
-* System dependencies
+## Installation
 
-* Configuration
+* Clone this repository
+* Provision a Nexmo virtual number from the Nexmo dashboard
+* Create a Nexmo application from the Nexmo dashboard
+* Link your virtual number to your application in the Nexmo dashboard
+* Start up the Rails server
+* Make your server externally accessible with ngrok
 
-* Database creation
+## Usage
 
-* Database initialization
+* Dial your phone number and leave a voicemail
+* Access your website by visiting `http://localhost:3000/` and click on `Click here to listen` to hear your recording
 
-* How to run the test suite
+## License
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This application is under the [MIT License](LICENSE)
