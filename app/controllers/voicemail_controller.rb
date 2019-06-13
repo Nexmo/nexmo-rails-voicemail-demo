@@ -1,8 +1,8 @@
 class VoicemailController < ApplicationController
     skip_before_action :verify_authenticity_token
 
-    NEXMO_NUMBER = 972526283474
-    EXTERNAL_URL = 'http://bengreenberg.ngrok.io'
+    NEXMO_NUMBER = 'YOUR NEXMO VIRTUAL PHONE NUMBER HERE'
+    EXTERNAL_URL = 'http://YOUR NGROK URL HERE'
     
     def index
         @recordings = Recording.all
