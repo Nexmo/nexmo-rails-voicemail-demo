@@ -9,12 +9,12 @@
         <th>Conversation UUID</th>
         <th>Recording</th>
     </tr>
-    <tr>
-        <% @recordings.each do |r| %>
+    <% @recordings.each do |r| %>
+        <tr>
             <td><%= r.from %></td>
             <td><%= r.created_at %></td>
             <td><%= r.uuid %></td>
             <td><a href="/voicemail/<%= r.recording_uuid %>.wav">Click here to listen</a></td>
-        <% end %>
-    </tr>
+        </tr>
+    <% end %>
 </table>
